@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold</title>
+    <link rel="icon" type="image/x-icon" href="./images/Tab Icon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="game-container">
+        <div>
+            <ul class="d-flex justify-content-around p-3">
+                <li><h3>Ninja <span class="gold">Gold </span></h3></li>
+                <li><p>Gold: <span id="gold_count">0</span></p></li>
+                <li><p>Attempts: <span id="att_count">20</span></p></li>
+                <li><button id="reset_button">Restart</button></li>
+            </ul>
+        </div>
+        <div class="location">
+            <div class="d-flex justify-content-around position-relative m-4">
+                <button class="loc_btn" id="cave_btn"><img src="./images/cave.png" alt=""></button>
+                <button class="loc_btn" id="house_btn"><img src="./images/house.png" alt=""></button>
+            </div>
+            <div class="d-flex justify-content-center position-relative">
+                <img id="ninja" src="./images/Ninja.gif" alt="" class="img-fluid">
+            </div>
+            <div class="d-flex justify-content-around position-relative mt-5 pt-5">
+                <button class="loc_btn" id="goldmine_btn"><img src="./images/goldmine.png" alt=""></button>
+                <button class="loc_btn" id="casino_btn"><img src="./images/casino.png" alt=""></button>
+            </div>
+            <div id="message-container" class="d-flex justify-content-center"></div>
+            <hr>
+            <div class="col-sm-6 mx-auto text-center"><h5 class="gold">Log Event</h5></div>
+            <div id="log-container" class="col-sm-6 mx-auto text-center"></div>
+            
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
